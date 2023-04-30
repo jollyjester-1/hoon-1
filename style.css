@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 16px;
+}
