@@ -1,21 +1,19 @@
-name: Play Music on Pull Request
+name: My GitHub Action
 
 on:
-  pull_request:
-    types:
-      - opened
-      - synchronize
+  push:
+    branches:
+      - main
 
 jobs:
-  play_music:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Play Music
+      - name: Run script
         run: |
-          sudo apt-get update
-          sudo apt-get install -y mpg123
-          mpg123 your-music-file.mp3
+          # Replace this line with the command or script you want to execute
+          echo "Hello, World!"
